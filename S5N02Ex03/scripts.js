@@ -3,8 +3,6 @@ function main() {
     // nouAcudit1(apiUrl);
     apiUrl = "https://api.chucknorris.io/jokes/random";
     // nouAcudit2(apiUrl);
-    apiUrl = "https://opendata.aemet.es/opendata/sh/a5fab0ee/"
-    // aemet(apiUrl);
 }
 
 function unixTime2CET(timestamp) {
@@ -23,7 +21,7 @@ async function openWeather(city, units) {
 
     // http://api.openweathermap.org/data/2.5/weather?q=Barcelona,es&APPID=97ab277f393b72bfccd4d6886b7c32fc
     var apiUrl = "http://api.openweathermap.org/data/2.5/weather";
-    var apiKey = "97ab277f393b72bfccd4d6886b7c32fc";
+    var apiKey = "";
     var urlApiKey = apiUrl + '?q=' + city + '&units=' + units + '&APPID=' + apiKey;
     console.log(urlApiKey);
     const response = await fetch(urlApiKey);
