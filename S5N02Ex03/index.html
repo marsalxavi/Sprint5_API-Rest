@@ -8,16 +8,24 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Web Acudits</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <title>Web Acudits i Meteo Info</title>
 </head>
-<h2>Web Acudits</h2>
 
 <body>
-    <p id="inputDades" </p>
-        <script src='scripts.js'></script>
-        <script>  openWeather('Barcelona,es', 'metric');</script>
-        <input type='button' onClick='main()' Value='Nou Acudit ->' />
+    <script src='scripts.js'></script>
+    <h2>Meteo</h2>
+    <div id='infoMeteo'>
+        <script> // Mostra la Info Meteo
+            openWeatherMap('Barcelona,es', 'metric');
+        </script>
+    </div>
+    <!-- Demanar mostrar nous acudits a 2 fonts diferents -->
+    <div> 
+        <input type='button' onClick='main()' Value='Nous Acudits =>' />
+    </div>
+    <h2>Acudits</h2>
+    <p id="Acudit1" </p>
+    <p id="Acudit2" </p>
 </body>
 
 </html>
